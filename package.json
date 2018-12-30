@@ -1,6 +1,6 @@
 {
   "name": "nat-upnp-wrapper",
-  "version": "1.3.1",
+  "version": "1.3.5",
   "description": "A nat-upnp wrapper.",
   "main": "mapper.js",
   "dependencies": {
