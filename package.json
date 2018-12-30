@@ -1,6 +1,6 @@
 {
-  "name": "upnp",
-  "version": "1.0.0",
+  "name": "nat-upnp-wrapper",
+  "version": "1.1.1",
   "description": "A nat-upnp wrapper.",
   "main": "mapper.js",
   "dependencies": {
@@ -9,6 +9,13 @@
   "keywords": [
     "upnp"
   ],
-  "author": "Andres Sweeney-Rios",
+  "github": "https://github.com/Andr3wRiv3rs/nat-upnp-wrapper",
+  "author": {
+    "name": "Andres Sweeney-Rios",
+    "email": "andrewarivers@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Andr3wRiv3rs/nat-upnp-wrapper/issues"
+  },
   "license": "MIT"
 }
