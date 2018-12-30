@@ -1,0 +1,14 @@
+{
+  "name": "upnp",
+  "version": "1.0.0",
+  "description": "A nat-upnp wrapper.",
+  "main": "mapper.js",
+  "dependencies": {
+    "nat-upnp": "^1.1.1"
+  },
+  "keywords": [
+    "upnp"
+  ],
+  "author": "Andres Sweeney-Rios",
+  "license": "MIT"
+}
