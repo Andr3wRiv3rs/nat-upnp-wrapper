@@ -1,21 +1,45 @@
-#nat-upnp-wrapper
+# nat-upnp-wrapper
 This is a wrapper for the nat-upnp module.
 
-##Script Usage
+## Script Usage
 
 **Map port**
 ```js
 const mapper = require('nat-upnp-wrapper');
-mapper.map(80).then(response => console.log(response.success));
+mapper.map(options).then(response => console.log(response.success));
 ```
-Port Format: `public OR public, private OR [public, [public,private], ..]`
+Options:
+
+```js
+{
+    "port": 80, // or [public,private]
+    "ports": [80,443,[8081,8082]], // takes priority
+    "protocol": "UDP" // defaults to "TCP"
+}
+```
 
 
 **Unmap port**
 ```js
-mapper.unmap(80).then(response => ...);
+mapper.unmap(options).then(response => ...);
 ```
-Port Format: `public OR [public, ..]`
+
+Options
+
+```js
+{
+    "port": 80,
+    "ports": [80,443,8081],
+    "protocol": "UDP"
+}
+```
+
+
+**Get Mappings**
+```js
+mapper.mappings(true).then(response => console.log(response.results));
+```
+Set to `true` for local results. Defaults to `false`.
 
 
 **Get Public IP Address**
